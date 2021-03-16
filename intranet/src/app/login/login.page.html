@@ -1,0 +1,55 @@
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+
+    <ion-item color="primary">
+    <ion-toolbar>
+      <ion-title size="large">Intranet Dicsys</ion-title>
+    </ion-toolbar>
+  </ion-item>
+
+  </ion-header>
+
+  
+
+
+
+
+
+  
+  <ion-img class="logo-dicsys" src="http://dicsys.com/wp-content/uploads/2016/02/isologotipo.png"  style="margin-left: 2%;margin-right: 2%;"></ion-img>
+  
+  
+  <div class="login-container" style="margin-left: 5%;margin-right: 5%;">
+  <div class="formHolder">
+    
+    <form>
+      <ion-item>
+        <ion-label position="floating">Usuario/email</ion-label>
+        <ion-input [(ngModel)]="mail" name="usuario" type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Contraseña:</ion-label>
+        <ion-input [(ngModel)]="pass" name="i_pass" type="password"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-checkbox></ion-checkbox>
+        <ion-label  class="ion-padding"> Mantener sesión iniciada.</ion-label>
+      </ion-item>
+      <ion-button expand="block" (click)="Login()" style="--ion-color-secondary: #0075BE;">Iniciar Sesión</ion-button>
+    
+   <div  class="ion-text-center link-recuperar-pass">
+     <!--Enlace de prueba. Falta que lleve a la vista 'Recuperar contraseña'-->
+    <ion-router-link color="primary"  href="https://ionicframework.com/docs/v4/api/anchor">¿Olvidó su contraseña?</ion-router-link>
+  </div>  
+  </form>
+  </div>
+  
+
+  </div>
+
+  <ion-footer class="footer">
+    <div style="position: absolute;  bottom:100px;  width: 100vw;background-color: rgb(255, 255, 255); height: 105px;z-index: 1"></div>
+    <div style="z-index: -1;position: absolute; bottom:0;"><ion-img  src="http://www.dicsys.com/wp-content/uploads/2014/06/dicsys_fondo-paralax-2.jpg"></ion-img></div>
+    
+  </ion-footer>
+</ion-content>
