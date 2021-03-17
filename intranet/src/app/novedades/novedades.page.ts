@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router'
+import { MenuController } from '@ionic/angular';
 
 @Component({
   selector: 'app-novedades',
@@ -9,6 +10,7 @@ import { Router } from '@angular/router'
 export class NovedadesPage implements OnInit {
 
   constructor(  private _router: Router,
+    public menu: MenuController,
     ) { }
 
   ngOnInit() {
@@ -16,6 +18,11 @@ export class NovedadesPage implements OnInit {
 
   volverInicio(){
     this._router.navigate(['/home']);//vuelve a home
+  }
+
+  tMenu(){
+   
+    this.menu.toggle();
   }
 
 }

@@ -2,8 +2,11 @@
 
   <ion-header >
     <ion-item style="--ion-background-color:#FFF000; box-shadow: 0px 10px 10px rgba(177, 177, 177, 0.5); color:#000000">
-      <ion-buttons slot="start">
-        <ion-menu-button menu="main-menu" ></ion-menu-button><!-- el atributo  menu="main-menu"   apunta al menu deseado....SE OMITE SI SOLO HAY UN MENU WE (el mismo main-menu en el hhtplogout) -->
+      <ion-buttons slot="start" >
+        <ion-button (click)="tMenu()">
+          <ion-icon slot="icon-only" name="menu"></ion-icon>
+        </ion-button>
+        <!-- el atributo  menu="main-menu"   apunta al menu deseado....SE OMITE SI SOLO HAY UN MENU WE (el mismo main-menu en el hhtplogout) -->
       </ion-buttons>
       <ion-title >Herramientas</ion-title>
 
@@ -265,53 +268,36 @@
   
   
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   <div style="height: 100px;"></div>
   <ion-footer style="background-color:#ffffff;
   position:fixed;
-
   left:0;
   bottom:0;
   width:100%">
       <ion-grid>
         <ion-row>
           
-          <ion-col size="3" class="columnaFooter" >
+          <ion-col  class="columnaFooter" >
             <ion-item lines="none">
-              <a href="https://www.facebook.com/DicsysSA/" target="_blank" ><ion-icon name="logo-facebook"></ion-icon></a>
+              <a href="https://www.facebook.com/DicsysSA/" target="_blank" ><ion-icon name="logo-facebook"  size="large"></ion-icon></a>
             </ion-item>
           </ion-col>
   
-          <ion-col size="3"  class="columnaFooter">
+          <ion-col  class="columnaFooter">
             <ion-item lines="none">
-              <a href="https://www.instagram.com/dicsys_sa" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+              <a href="https://www.instagram.com/dicsys_sa" target="_blank"><ion-icon name="logo-instagram" size="large"></ion-icon></a>
             </ion-item>
           </ion-col>
   
-          <ion-col size="3"  class="columnaFooter">
+          <ion-col  class="columnaFooter">
             <ion-item lines="none">
-              <a href="https://www.twitter.com/dicsys_sa" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
+              <a href="https://www.twitter.com/dicsys_sa" target="_blank"><ion-icon name="logo-twitter" size="large"></ion-icon></a>
             </ion-item>
           </ion-col>
   
-          <ion-col size="3"  class="columnaFooter">
+          <ion-col   class="columnaFooter">
             <ion-item lines="none">
-             <a href="https://www.linkedin.com/company/somosdicsys" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+             <a href="https://www.linkedin.com/company/somosdicsys" target="_blank"><ion-icon name="logo-linkedin" size="large"></ion-icon></a>
             </ion-item>
           </ion-col>
   

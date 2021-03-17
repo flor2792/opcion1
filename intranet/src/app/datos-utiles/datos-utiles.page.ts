@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
 import { Router } from '@angular/router'
-
+import { MenuController } from '@ionic/angular';
 
 
 @Component({
@@ -45,7 +45,8 @@ export class DatosUtilesPage implements OnInit {
 
 
   constructor(public navCtrl: NavController,
-    private _router: Router,) {
+    private _router: Router,
+    public menu: MenuController,) {
 /*
     for(let i = 0; i < 4; i++ ){
       this.data.push({
@@ -73,6 +74,11 @@ export class DatosUtilesPage implements OnInit {
 
   volverInicio(){
     this._router.navigate(['/home']);//vuelve a home
+  }
+
+  tMenu(){
+   
+    this.menu.toggle();
   }
   
   

@@ -20,7 +20,7 @@ export class HomePage implements OnInit {
   };
 
 
-  constructor(private menuCtrl: MenuController,
+  constructor(
       	      private uService: UsuarioDatosService,
               private router: Router,
               public menu: MenuController,
@@ -37,7 +37,10 @@ export class HomePage implements OnInit {
     this.router.navigate(['/home']);
   }
 
-  
+  tMenu(){
+   
+    this.menu.toggle();
+  }
   
 
 }

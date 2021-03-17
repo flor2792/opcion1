@@ -3,8 +3,11 @@
 
       <ion-header >
         <ion-item style="--ion-background-color:#0075BE; box-shadow: 0px 10px 10px rgba(177, 177, 177, 0.5); color:rgb(255, 255, 255)">
-          <ion-buttons slot="start">
-            <ion-menu-button menu="main-menu" ></ion-menu-button><!-- el atributo  menu="main-menu"   apunta al menu deseado....SE OMITE SI SOLO HAY UN MENU WE (el mismo main-menu en el hhtplogout) -->
+          <ion-buttons slot="start" >
+            <ion-button (click)="tMenu()">
+              <ion-icon slot="icon-only" name="menu"></ion-icon>
+            </ion-button>
+            <!-- el atributo  menu="main-menu"   apunta al menu deseado....SE OMITE SI SOLO HAY UN MENU WE (el mismo main-menu en el hhtplogout) -->
           </ion-buttons>
 
           <ion-title >Clientes</ion-title>
@@ -27,22 +30,22 @@
 
       <ion-card  style=" box-shadow: none;">
         <ion-card-content >
-          <img src="https://www.dicsys.com/img/{{i+1}}.png" style="background: #0075BE;">
+          <img src="https://www.dicsys.com/img/{{i+1}}.png" style="background: #0075BE;border-radius: 5px;">
         </ion-card-content>
         <ion-card-content>
-          <img src="https://www.dicsys.com/img/{{i+7}}.png"  style="background: #5BC5F2;">
+          <img src="https://www.dicsys.com/img/{{i+7}}.png"  style="background: #5BC5F2;border-radius: 5px;">
         </ion-card-content>
         <ion-card-content>
-          <img src="https://www.dicsys.com/img/{{i+13}}.png" style="background: #53AF32;">
+          <img src="https://www.dicsys.com/img/{{i+13}}.png" style="background: #53AF32;border-radius: 5px;">
         </ion-card-content>
         <ion-card-content>
-          <img src="https://www.dicsys.com/img/{{i+19}}.png" style="background: #FFCC00;">
+          <img src="https://www.dicsys.com/img/{{i+19}}.png" style="background: #FFCC00;border-radius: 5px;">
         </ion-card-content>
         <ion-card-content>
-          <img src="https://www.dicsys.com/img/{{i+25}}.png" style="background: #E94E0F;">
+          <img src="https://www.dicsys.com/img/{{i+25}}.png" style="background: #E94E0F;border-radius: 5px;">
         </ion-card-content>
         <ion-card-content >
-          <img src="https://www.dicsys.com/img/{{i+30}}.png" style="background: #F7A700;">
+          <img src="https://www.dicsys.com/img/{{i+30}}.png" style="background: #F7A700;border-radius: 5px;">
         </ion-card-content>
       </ion-card>
 
@@ -62,27 +65,27 @@
       <ion-grid>
         <ion-row>
           
-          <ion-col size="3" class="columnaFooter" >
+          <ion-col  class="columnaFooter" >
             <ion-item lines="none">
-              <a href="https://www.facebook.com/DicsysSA/" target="_blank" ><ion-icon name="logo-facebook"></ion-icon></a>
+              <a href="https://www.facebook.com/DicsysSA/" target="_blank" ><ion-icon name="logo-facebook"  size="large"></ion-icon></a>
             </ion-item>
           </ion-col>
   
-          <ion-col size="3"  class="columnaFooter">
+          <ion-col  class="columnaFooter">
             <ion-item lines="none">
-              <a href="https://www.instagram.com/dicsys_sa" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+              <a href="https://www.instagram.com/dicsys_sa" target="_blank"><ion-icon name="logo-instagram" size="large"></ion-icon></a>
             </ion-item>
           </ion-col>
   
-          <ion-col size="3"  class="columnaFooter">
+          <ion-col  class="columnaFooter">
             <ion-item lines="none">
-              <a href="https://www.twitter.com/dicsys_sa" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
+              <a href="https://www.twitter.com/dicsys_sa" target="_blank"><ion-icon name="logo-twitter" size="large"></ion-icon></a>
             </ion-item>
           </ion-col>
   
-          <ion-col size="3"  class="columnaFooter">
+          <ion-col   class="columnaFooter">
             <ion-item lines="none">
-             <a href="https://www.linkedin.com/company/somosdicsys" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+             <a href="https://www.linkedin.com/company/somosdicsys" target="_blank"><ion-icon name="logo-linkedin" size="large"></ion-icon></a>
             </ion-item>
           </ion-col>
   
